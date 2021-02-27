@@ -6,34 +6,149 @@
     font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.page {
-    border: 1px solid red;
+body {
+    background-color: rgb(255, 225, 168);
 }
+
+.page {
+    background-color:rgb(255, 220, 154);
+}
+.page-title {
+    text-align: center;
+}
+
 .header {
     border: 1px solid orange;
     text-align: center;
     padding: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
 
     background-color: lightgreen;
 }
 
 .footer {
-    border: 1px solid greenyellow;
-    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: lightgreen;
+
+    margin-top: 25px;
     text-align: center;
+}
+/* footer */
+.footer-button {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+.footer-button>a {
+    text-decoration: none;
+    color: black;
+    flex: 1;
+    padding: 30px;
+    margin: 20px;
+}
+.footer-button>a:hover {
+    text-decoration: none;
+    color: black;
+    background-color: greenyellow;
 }
 
 
+
 @media only screen and (min-width: 376px) {
-    #activity-selector {
-        display: flex;
+    .page {
+        width: 50%;
+        margin: 250px auto;
+
     }
 
+    #activity-selector {
+        display: flex;
+        justify-content: space-evenly;
+    }
     #activity-selector>li {
         list-style-type: none;
-        flex-wrap: wrap;
+
+        text-align: center;
+        
     }
+
+    /* - - - - - - - - */
+
+    /* main buttons */
+    .main-btn {
+        /* padding: 100px 10px; */
+        display: flex;
+        justify-content: center;
+        color: black;
+
+        /* position: absolute; */
+    }
+    .main-btn-a {
+        flex: 1;
+
+        padding: 100px 10px;
+        margin: 20px;
+
+        text-decoration: none;
+        color: black;
+    }
+    .main-btn-a:hover {
+        text-decoration: none;
+        color: black;
+        background-color: rgb(255, 239, 195);
+    }
+
+    /* api stuff */
+    .page>p {
+        padding: 10px;
+    }
+
+    #search-container {
+        display: flex;
+        justify-content: center;
+    }
+    #search-advice-input {
+        margin: 10px;
+    }
+    #search-advice-label {
+        margin: 10px;
+    }
+
+    .advice-buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .advice-button {
+        flex: 1;
+        padding: 10px 0;
+        margin: 0 10px;
+    }
+
+    #result {
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .insult-buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .insult-button {
+        flex: 1;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #cat-pic {
+        display: block;
+        width: 80%;
+        margin: 0px auto;
+    }
+
+
+    /* - - - - - - - - */
 }
 @media only screen and (max-width: 375px) {
     .page {
@@ -45,47 +160,87 @@
         list-style-type: none;
         flex-wrap: wrap;
 
-        border: 1px solid blue;
-        margin: 20px;
-        padding: 20px;
 
         text-align: center;
         
     }
 
-    .main-btn {
-        border: 1px dotted red;
-        padding: 100px 10px;
 
+
+    /* - - - - - - - - */
+
+    /* main buttons */
+    .main-btn {
+        /* padding: 100px 10px; */
+        display: flex;
+        justify-content: center;
         color: black;
 
         /* position: absolute; */
     }
-
-    /* github link */
-    #github-button {
-        border: 1px dotted salmon;
-        display: flex;
-        justify-content: center;
-    }
-    #github-button>a {
-        border: 1px solid red;
+    .main-btn-a {
         flex: 1;
-        padding: 30px;
-    }
 
-    /* main buttons */
-    .main-btn {
+        padding: 100px 10px;
+        margin: 20px;
 
-    }
-    .main-btn:hover {
-
-    }
-
-    .main-btn {
-        
+        text-decoration: none;
+        color: black;
     }
     .main-btn-a:hover {
         text-decoration: none;
+        color: black;
+        background-color: rgb(255, 239, 195);
     }
+
+    /* api stuff */
+    .page>p {
+        padding: 10px;
+    }
+
+    #search-container {
+        display: flex;
+        justify-content: center;
+    }
+    #search-advice-input {
+        margin: 10px;
+    }
+    #search-advice-label {
+        margin: 10px;
+    }
+
+    .advice-buttons {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .advice-button {
+        flex: 1;
+        padding: 10px 0;
+        margin: 0 10px;
+    }
+
+    #result {
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .insult-buttons {
+        display: flex;
+        justify-content: center;
+    }
+    .insult-button {
+        flex: 1;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    #cat-pic {
+        display: block;
+        width: 80%;
+        margin: 0px auto;
+    }
+
+
+    /* - - - - - - - - */
 }
