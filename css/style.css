@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.page {
+    border: 1px solid red;
+}
+.header {
+    border: 1px solid orange;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+
+    background-color: lightgreen;
+}
+
+.footer {
+    border: 1px solid greenyellow;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+@media only screen and (min-width: 376px) {
+    #activity-selector {
+        display: flex;
+    }
+
+    #activity-selector>li {
+        list-style-type: none;
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .page {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    #activity-selector>li {
+        list-style-type: none;
+        flex-wrap: wrap;
+
+        border: 1px solid blue;
+        margin: 20px;
+        padding: 20px;
+
+        text-align: center;
+        
+    }
+
+    .main-btn {
+        border: 1px dotted red;
+        padding: 100px 10px;
+
+        color: black;
+
+        /* position: absolute; */
+    }
+
+    /* github link */
+    #github-button {
+        border: 1px dotted salmon;
+        display: flex;
+        justify-content: center;
+    }
+    #github-button>a {
+        border: 1px solid red;
+        flex: 1;
+        padding: 30px;
+    }
+
+    /* main buttons */
+    .main-btn {
+
+    }
+    .main-btn:hover {
+
+    }
+
+    .main-btn {
+        
+    }
+    .main-btn-a:hover {
+        text-decoration: none;
+    }
+}
